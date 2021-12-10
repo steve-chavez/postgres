@@ -786,6 +786,10 @@ jit_provider = 'llvmjit'		# JIT library to use
 #include_if_exists = '...'		# include file only if it exists
 #include = '...'			# include file
 
+# Automatically generated optimizations
+include = '/etc/postgresql-custom/generated-optimizations.conf'
+# User-supplied custom parameters, override any automatically generated ones
+include = '/etc/postgresql-custom/custom-overrides.conf'
 
 #------------------------------------------------------------------------------
 # CUSTOMIZED OPTIONS
